@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>OdinFunctionBasics</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
@@ -20,7 +20,7 @@
                 </p>
             </div>
         <div id="mid">
-     <p>Tähän tulee vain OdinFunctionBasics tehtäviä</p>
+     <p>Tällä sivulla on vaan fizzBuzz tehtävä</p>
      
     </div>
     <div id="right">
@@ -29,33 +29,19 @@
 </div>
         <script>
 
-    function add7(number) {
-    newNumber = number + 7
-    return number + " + 7 is " + newNumber 
-  }
+let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 
-  function multiply (num1, num2){
-    newNumber = num1 * num2
-    return num1 + " times " + num2 + " is " + newNumber
-  }
-
-  function capitalize(text){
-    text = text.toLowerCase()
-    newText = text.charAt(0).toUpperCase() + text.slice(1, text.lenght)
-    return text + " touppercase "+newText
-  }
-
-  function lastletter(text) {
-    newText = text.slice(text.lastIndexOf())
-    return newText
-  }
-
-  console.log(add7(5))
-  console.log(multiply(2,3))
-  console.log(capitalize("TTKTKT"))
-  console.log(lastletter("jjokn"))
-
-
+for (let i = 1; i <= answer; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if(i % 3 === 0){
+    console.log("Fizz")
+ }  else if (i % 5 == 0){
+    console.log("Buzz")
+}else {
+  console.log(i);
+}
+}
 
         </script>
     </body>
