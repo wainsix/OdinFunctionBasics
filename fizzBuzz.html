@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -30,14 +27,15 @@
         <script>
 function fizzBuzz(){
 let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+let table = [1,2,3,4]
 
 for (let i = 1; i <= answer; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
+    document.createTextNode.innerHTML = ( i + " FizzBuzz");
   } else if(i % 3 === 0){
-    console.log("Fizz")
+    document.createTextNode.innerHTML = ( i +" Fizz")
  }  else if (i % 5 == 0){
-    console.log("Buzz")
+    document.createTextNode.innerHTML = ( i + " Buzz")
 }else {
   console.log(i);
 }
