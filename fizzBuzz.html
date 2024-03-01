@@ -27,17 +27,32 @@
         <script>
 function fizzBuzz(){
 let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-let table = [1,2,3,4]
 
 for (let i = 1; i <= answer; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-    document.createTextNode.innerHTML = ( i + " FizzBuzz");
+        const newDiv = document.createElement("div");
+
+        newDiv.setAttribute("id", "div" + i);
+        document.body.appendChild(newDiv)
+    document.getElementById("div" + i).innerHTML = ( i + " FizzBuzz");
   } else if(i % 3 === 0){
-    document.createTextNode.innerHTML = ( i +" Fizz")
+    const newDiv = document.createElement("div");
+
+        newDiv.setAttribute("id", "div" + i);
+        document.body.appendChild(newDiv)
+    document.getElementById("div" + i).innerHTML =  ( i +" Fizz")
  }  else if (i % 5 == 0){
-    document.createTextNode.innerHTML = ( i + " Buzz")
+    const newDiv = document.createElement("div");
+
+        newDiv.setAttribute("id", "div" + i);
+        document.body.appendChild(newDiv)
+    document.getElementById("div" + i).innerHTML = ( i + " Buzz")
 }else {
-  console.log(i);
+    const newDiv = document.createElement("div");
+
+newDiv.setAttribute("id", "div" + i);
+document.body.appendChild(newDiv)
+document.getElementById("div" + i).innerHTML = ( i )
 }
 }
 }
